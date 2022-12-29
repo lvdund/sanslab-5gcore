@@ -1,0 +1,23 @@
+module fa(sum,count,a,b,cin);
+input a,b,cin;
+output sum,count;
+xor x1(w0,a,b);
+and a1(w1,a,b);
+xor x2(sum,w0,cin);
+and a2(w2,w0,cin);
+or ol(count,w1,w2);
+endmodule
+
+module testbenchforfulladder;
+reg a,b,cin;
+wire sum,count;
+fa fl(sum,count,a,b,cin);
+initial
+begin
+a=1'b0;b=1'b0;cin=1'b0;
+#5;a=1'b0;b=1'b0;cin=1'b1;
+#5;a=1'b0;b=1'b0;cin=1'b1;
+#5;a=1'b0;b=1'b0;cin=1'b0;
+#5a=1'b1;b=1'b1;cin=1'b1;
+end
+endmodule
