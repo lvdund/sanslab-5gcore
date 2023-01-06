@@ -11,17 +11,17 @@ NrfSbiDefaultScheme          = "https"
 NrfNfmResUriPrefix           = "/nnrf-nfm/v1"
 NrfDiscResUriPrefix          = "/nnrf-disc/v1"
 
-class Info():
+class Info:
     def __init__(self, Version, Description):
         self.Version = Version
         self.Description = Description
 
-class Cert():
+class Cert:
     def __init__(self, Pem, Key):
         self.Pem = Pem
         self.Key = Key
 
-class Sbi():
+class Sbi:
     def __init__(self, Scheme, RegisterIPv4, BindingIPv4, Port, Cert, RootCert, OAuth):
         self.Scheme = Scheme
         self.RegisterIPv4 = RegisterIPv4
@@ -31,7 +31,7 @@ class Sbi():
         self.RootCert = RootCert
         self.OAuth = OAuth
 
-class Configuration():
+class Configuration:
     def __init__(self, Sbi = Sbi(), MongoDBName = '', MongoDBUrl = '', DefaultPlmnId = 0, ServiceNameList = list()):
         self.Sbi = Sbi
         self.MongoDBName = MongoDBName
@@ -39,7 +39,7 @@ class Configuration():
         self.DefaultPlmnId = DefaultPlmnId
         self.ServiceNameList = ServiceNameList
 
-class Config():
+class Config:
     def __init__(self, Info = Info(), Configuration = Configuration(), Logger = ''):
         self.Info = Info
         self.Configuration = Configuration

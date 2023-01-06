@@ -1,10 +1,10 @@
 
 
-class LogSetting():
+class LogSetting:
     DebugLevel: str
     ReportCaller: bool
 
-class Logger():
+class Logger:
     AMF: LogSetting
     AUSF: LogSetting
     N3IWF: LogSetting

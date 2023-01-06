@@ -3,7 +3,7 @@ from pkg.factory.factory import CheckConfigVersion
 from pkg.factory.factory import NrfConfig
 from pkg.factory.config import Config
 
-class NRF():
+class NRF:
     def __init__(self, KeyLogPath):
         self.KeyLogPath = KeyLogPath
     
@@ -16,7 +16,7 @@ class NRF():
     def Start(self):
         err = SetMongoDB()
 
-class Commands():
+class Commands:
     def __init__(self, config, nrf):
         self.config = config
         self.nrf = nrf
