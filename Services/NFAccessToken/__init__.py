@@ -1,1 +1,1 @@
-from . import schemas
+from . import model_accesstoken

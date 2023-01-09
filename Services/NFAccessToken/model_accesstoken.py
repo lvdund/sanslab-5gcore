@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from Services.schemas import *
+from Services.model import *
 
 Grant_type = ( 'client_credentials')
 Error = ( 'invalid_request', 'invalid_client', 'invalid_grant', 'unauthorized_client', 'unsupported_grant_type', 'invalid_scope')
@@ -12,8 +12,8 @@ class AccessTokenReq:
     targetNfType: str = ''
     scope: str = ''
     targetNfInstanceId: str = ''
-    requesterPlmn: PlmnId
-    targetPlmn: PlmnId
+    requesterPlmn: PlmnId = PlmnId('', '')
+    targetPlmn: PlmnId = PlmnId('', '')
 
 @dataclass
 class AccessTokenRsp:
@@ -26,7 +26,7 @@ class AccessTokenRsp:
 class AccessTokenClaims:
     issuer: str = ''
     subject: int = 0
-    audience: any
+    audience: any = ''
     scope: str = ''
     expiration: int = 0
 

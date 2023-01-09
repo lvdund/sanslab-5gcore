@@ -1,2 +1,2 @@
 from . import NFDiscovery
-from . import schemas
+from . import model
