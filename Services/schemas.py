@@ -5,5 +5,5 @@ NFTypes = ( 'NRF', 'UDM', 'AMF', 'SMF', 'AUSF', 'NEF', 'PCF', 'SMSF', 'NSSF',
 
 @dataclass
 class PlmnId:
-    mcc: str
-    mnc: str
+    mcc: str = ''
+    mnc: str = ''

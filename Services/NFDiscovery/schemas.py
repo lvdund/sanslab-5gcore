@@ -8,32 +8,32 @@ AccessType = ( '3GPP_ACCESS', 'NON_3GPP_ACCESS')
 
 @dataclass
 class Snssai:
-    stt: int
-    sd: int
+    stt: int = 0
+    sd: int = 0
 
 @dataclass
 class SupiRange:
-    start: str
-    end: str
-    pattern: str
+    start: str = ''
+    end: str = ''
+    pattern: str = ''
 
 @dataclass
 class IdentityRange:
-    start: str
-    end: str
-    pattern: str
+    start: str = ''
+    end: str = ''
+    pattern: str = ''
 
 @dataclass
 class UdrInfo:
-    groupId: str
-    supportedDataSets: str
+    groupId: str = ''
+    supportedDataSets: str = ''
     supiRanges: list[SupiRange] = field(default_factory=list)
     gpsiRanges: list[IdentityRange] = field(default_factory=list)
     externalGroupIdentifiersRanges: list[IdentityRange] = field(default_factory=list)
 
 @dataclass
 class UdmInfo:
-    groupId: str
+    groupId: str = ''
     supiRanges: list[SupiRange] = field(default_factory=list)
     gpsiRanges: list[IdentityRange] = field(default_factory=list)
     externalGroupIdentifiersRanges: list[IdentityRange] = field(default_factory=list)
@@ -41,25 +41,25 @@ class UdmInfo:
 
 @dataclass
 class AusfInfo:
-    groupId: str
+    groupId: str = ''
     supiRanges: list[SupiRange] = field(default_factory=list)
     routingIndicators: list[str] = field(default_factory=list)
 
 @dataclass
 class Guami:
     plmnId: PlmnId
-    amfId: str
+    amfId: str = ''
 
 @dataclass
 class Tai:
     plmnId: PlmnId
-    tac: str
+    tac: str = ''
 
 @dataclass
 class TacRange:
-    start: str
-    end: str
-    pattern: str
+    start: str = ''
+    end: str = ''
+    pattern: str = ''
 
 @dataclass
 class TaiRange:
@@ -68,15 +68,15 @@ class TaiRange:
 
 @dataclass
 class N2InterfaceAmfInfo:
-    amfName: str
+    amfName: str = ''
     ipv4EndpointAddress: list[str] =  field(default_factory=list)
     ipv6EndpointAddress: list[str] =  field(default_factory=list)
 
 @dataclass
 class AmfInfo:
-    amfSetId: str
-    amfRegionId: str
     n2InterfaceAmfInfo: N2InterfaceAmfInfo
+    amfSetId: str = ''
+    amfRegionId: str = ''
     guamiList: list[Guami] =  field(default_factory=list)
     taiList: list[Tai] =  field(default_factory=list)
     taiRangeList: list[TaiRange] =  field(default_factory=list)
@@ -84,7 +84,7 @@ class AmfInfo:
 
 @dataclass
 class DnnSmfInfoItem:
-    dnn: str
+    dnn: str = ''
     
 @dataclass
 class SnssaiSmfInfoItem:
@@ -93,7 +93,7 @@ class SnssaiSmfInfoItem:
 
 @dataclass
 class SmfInfo:
-    pgwFqdn: str
+    pgwFqdn: str = ''
     accessType: list[str] = field(default_factory=list)
     sNssaiSmfInfoList: list[SnssaiSmfInfoItem] = field(default_factory=list)
     taiList: list[Tai] = field(default_factory=list)
@@ -105,7 +105,7 @@ class DnaiList:
 
 @dataclass
 class DnnUpfInfoItem:
-    dnn: str
+    dnn: str = ''
     dnaiList: list[DnnSmfInfoItem] = field(default_factory=list)
 
 @dataclass
@@ -117,9 +117,9 @@ UPInterfaceType = ( 'N3', 'N6', 'N9')
 
 @dataclass
 class InterfaceUpfInfoItem:
-    interfaceType: str
-    endpointFqdn: str
-    networkInstance: str
+    interfaceType: str = ''
+    endpointFqdn: str = ''
+    networkInstance: str = ''
     ipv4EndpointAddresses: list[str] =  field(default_factory=list)
     ipv4EndpointAddresses: list[str] =  field(default_factory=list)
     
@@ -132,20 +132,20 @@ class UpfInfo:
 
 @dataclass
 class PcfInfo:
-    rxDiamHost: str
-    rxDiamRealm: str
+    rxDiamHost: str = ''
+    rxDiamRealm: str = ''
     dnnList: list[str] =  field(default_factory=list)
     supiRanges: list[SupiRange] =  field(default_factory=list)
 
 @dataclass
 class Ipv4AddressRange:
-    start: str
-    end: str
+    start: str = ''
+    end: str = ''
 
 @dataclass
 class Ipv6PrefixRange:
-    start: str
-    end: str
+    start: str = ''
+    end: str = ''
 
 @dataclass
 class BsfInfo:
@@ -156,9 +156,9 @@ class BsfInfo:
 
 @dataclass
 class PlmnRange:
-    start: str
-    end: str
-    pattern: str    
+    start: str = ''
+    end: str = ''
+    pattern: str = ''    
 
 @dataclass
 class ChfInfo:
@@ -185,66 +185,66 @@ N2InformationClass = ('SM', 'NRPPa', 'PWS', 'PWS-BCAL', 'PWS-RF', 'RAN')
 
 @dataclass
 class NFServiceVersion:
-    apiVersionInUri: str
-    apiFullVersion: str
-    expiry: str
+    apiVersionInUri: str = ''
+    apiFullVersion: str = ''
+    expiry: str = ''
 
 @dataclass
 class IpEndPoint:
-    ipv4Address: str
-    ipv6Address: str
-    transport: str
-    port: int
+    ipv4Address: str = ''
+    ipv6Address: str = ''
+    transport: str = ''
+    port: int = 0
 
 @dataclass
 class DefaultNotificationSubscription:
-    notificationType: str
-    callbackUri: str
-    n1MessageClass: str
-    n2InformationClass: str
+    notificationType: str = ''
+    callbackUri: str = ''
+    n1MessageClass: str = ''
+    n2InformationClass: str = ''
 
 @dataclass
 class ChfServiceInfo:
-    primaryChfServiceInstance: str
-    secondaryChfServiceInstance: str
+    primaryChfServiceInstance: str = ''
+    secondaryChfServiceInstance: str = ''
 
 @dataclass
 class DefaultNotificationSubscription:
-    notificationType: str
-    callbackUri: str
-    n1MessageClass: str
-    n2InformationClass: str
+    notificationType: str = ''
+    callbackUri: str = ''
+    n1MessageClass: str = ''
+    n2InformationClass: str = ''
     
 @dataclass
 class NFService:
-    serviceInstanceId: str
-    serviceName: str
-    scheme: str
-    nfServiceStatus: str
-    fqdn: str
-    apiPrefix: str
-    capacity: int
-    load: int
-    priority: int
-    recoveryTime: str
-    supportedFeatures: str
-    chfServiceInfo: ChfServiceInfo
+    chfServiceInfo: ChfServiceInfo = ChfServiceInfo('','')
+    serviceInstanceId: str = ''
+    serviceName: str = ''
+    scheme: str = ''
+    nfServiceStatus: str = ''
+    fqdn: str = ''
+    apiPrefix: str = ''
+    capacity: int = 0
+    load: int = 0
+    priority: int = 0
+    recoveryTime: str = ''
+    supportedFeatures: str = ''
     versions: list[NFServiceVersion] =  field(default_factory=list)
     ipEndPoints: list[IpEndPoint] =  field(default_factory=list)
     defaultNotificationSubscriptions: list[DefaultNotificationSubscription] =  field(default_factory=list)
 
 @dataclass
 class NFProfile:
-    customInfo: any
-    nfInstanceId: str
-    nfType: str
-    nfStatus: str
-    fqdn: str
-    capacity: str
-    load: int
-    locality: str
-    priority: int
-    recoveryTime: str
+    customInfo: any = 0
+    nfInstanceId: str = ''
+    nfType: str = ''
+    nfStatus: str = ''
+    fqdn: str = ''
+    capacity: str = ''
+    load: int = 0
+    locality: str = ''
+    priority: int = 0
+    recoveryTime: str = ''
     nfServicePersistence: bool = False
     plmnList: list[PlmnId] = field(default_factory=list)
     sNssais: list[Snssai] =  field(default_factory=list)
@@ -264,8 +264,8 @@ class NFProfile:
 
 @dataclass
 class SearchResult:
-    validityPeriod: int
-    nfInstances: NFProfile
+    nfInstances: NFProfile = NFProfile()
+    validityPeriod: int = 0
 
 # nfslist = []
 
@@ -274,3 +274,5 @@ class SearchResult:
 # for i in range(0, 5):
 #     nfs_add = NFService(serviceName=random.choice(ServiceName), nfServiceStatus=random.choice(NfStatus))
 #     nfslist.append(nfs_add)
+
+nfslist = [NFProfile(nfType="AMF"), NFProfile(nfType="SMF"), NFProfile(nfType="UDM")]
