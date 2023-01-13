@@ -1,0 +1,147 @@
+{
+    "_id": {"$oid": "63bea1e9cacd73213eff6286"},
+    "plmnList": [
+        {
+            "mcc": "208",
+            "mnc": "93"
+        }
+    ],
+    "sNssais": [
+        {
+            "sst": 1.0,
+            "sd": "010203"
+        },
+        {
+            "sd": "112233",
+            "sst": 1.0
+        }
+    ],
+    "ipv4Addresses": ["127.0.0.18"],
+    "amfInfo": {
+        "guamiList": [
+            {
+                "plmnId": {
+                    "mcc": "208",
+                    "mnc": "93"
+                },
+                "amfId": "cafe00"
+            }
+        ],
+        "taiList": [
+            {
+                "plmnId": {
+                    "mcc": "208",
+                    "mnc": "93"
+                },
+                "tac": "000001"
+            }
+        ],
+        "amfSetId": "3f8",
+        "amfRegionId": "ca"
+    },
+    "nfServices": [
+        {
+            "ipEndPoints": [
+                {
+                    "ipv4Address": "127.0.0.18",
+                    "transport": "TCP",
+                    "port": 8000.0
+                }
+            ],
+            "apiPrefix": "http://127.0.0.18:8000",
+            "serviceInstanceId": "0",
+            "serviceName": "namf-comm",
+            "versions": [
+                {
+                    "apiVersionInUri": "v1",
+                    "apiFullVersion": "1.0.3"
+                }
+            ],
+            "scheme": "http",
+            "nfServiceStatus": "REGISTERED"
+        },
+        {
+            "versions": [
+                {
+                    "apiFullVersion": "1.0.3",
+                    "apiVersionInUri": "v1"
+                }
+            ],
+            "scheme": "http",
+            "nfServiceStatus": "REGISTERED",
+            "ipEndPoints": [
+                {
+                    "ipv4Address": "127.0.0.18",
+                    "transport": "TCP",
+                    "port": 8000.0
+                }
+            ],
+            "apiPrefix": "http://127.0.0.18:8000",
+            "serviceInstanceId": "1",
+            "serviceName": "namf-evts"
+        },
+        {
+            "apiPrefix": "http://127.0.0.18:8000",
+            "serviceInstanceId": "2",
+            "serviceName": "namf-mt",
+            "versions": [
+                {
+                    "apiVersionInUri": "v1",
+                    "apiFullVersion": "1.0.3"
+                }
+            ],
+            "scheme": "http",
+            "nfServiceStatus": "REGISTERED",
+            "ipEndPoints": [
+                {
+                    "transport": "TCP",
+                    "port": 8000.0,
+                    "ipv4Address": "127.0.0.18"
+                }
+            ]
+        },
+        {
+            "nfServiceStatus": "REGISTERED",
+            "ipEndPoints": [
+                {
+                    "ipv4Address": "127.0.0.18",
+                    "transport": "TCP",
+                    "port": 8000.0
+                }
+            ],
+            "apiPrefix": "http://127.0.0.18:8000",
+            "serviceInstanceId": "3",
+            "serviceName": "namf-loc",
+            "versions": [
+                {
+                    "apiVersionInUri": "v1",
+                    "apiFullVersion": "1.0.3"
+                }
+            ],
+            "scheme": "http"
+        },
+        {
+            "serviceInstanceId": "4",
+            "serviceName": "namf-oam",
+            "versions": [
+                {
+                    "apiVersionInUri": "v1",
+                    "apiFullVersion": "1.0.3"
+                }
+            ],
+            "scheme": "http",
+            "nfServiceStatus": "REGISTERED",
+            "ipEndPoints": [
+                {
+                    "ipv4Address": "127.0.0.18",
+                    "transport": "TCP",
+                    "port": 8000.0
+                }
+            ],
+            "apiPrefix": "http://127.0.0.18:8000"
+        }
+    ],
+    "nfInstanceId": "6cc5f275-25e6-4388-8fb3-cc7191eb7637",
+    "nfType": "AMF",
+    "nfStatus": "REGISTERED"
+}

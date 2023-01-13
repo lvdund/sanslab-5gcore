@@ -1,0 +1,13 @@
+{
+    "_id": {
+        "$oid": "63bea1e9cacd73213eff6285"
+    },
+    "_link": {
+        "item": [
+            {
+                "href": "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/6cc5f275-25e6-4388-8fb3-cc7191eb7637"
+            }
+        ]
+    },
+    "nfType": "AMF"
+}
