@@ -14,7 +14,7 @@ flask run
 
 * [localhost:5000/swagger](http://localhost:5000/swagger)
 
-### Example
+### Guide
 * ***2 command in file app.py are 2 example: route and api***
 * Homepage: [localhost:5000](http://localhost:5000)
 * Service Tinh tong 2 so x va y:
