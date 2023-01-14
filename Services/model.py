@@ -7,3 +7,4 @@ NFTypes = ( 'NRF', 'UDM', 'AMF', 'SMF', 'AUSF', 'NEF', 'PCF', 'SMSF', 'NSSF',
 class PlmnId:
     mcc: str = ''
     mnc: str = ''
+
