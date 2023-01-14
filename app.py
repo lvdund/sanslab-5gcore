@@ -1,8 +1,8 @@
 from flask import Flask, jsonify, request, render_template
 from flask_restful import Api, Resource
+from flask_swagger_ui import get_swaggerui_blueprint
 from Services import *
 from Services.NFDiscovery.discovery import *
-from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
 api = Api(app)
