@@ -1,147 +1,652 @@
-{
-    "_id": {"$oid": "63bea1e9cacd73213eff6286"},
+[
+  {
+    "_id": "63c40ad249632cef052d4595",
+    "nfStatus": "REGISTERED",
     "plmnList": [
-        {
-            "mcc": "208",
-            "mnc": "93"
-        }
+      {
+        "mcc": "208",
+        "mnc": "93"
+      },
+      {
+        "mcc": "123",
+        "mnc": "45"
+      }
     ],
-    "sNssais": [
-        {
-            "sst": 1.0,
-            "sd": "010203"
-        },
-        {
-            "sd": "112233",
-            "sst": 1.0
-        }
+    "ipv4Addresses": [
+      "127.0.0.9"
     ],
-    "ipv4Addresses": ["127.0.0.18"],
-    "amfInfo": {
-        "guamiList": [
-            {
-                "plmnId": {
-                    "mcc": "208",
-                    "mnc": "93"
-                },
-                "amfId": "cafe00"
-            }
-        ],
-        "taiList": [
-            {
-                "plmnId": {
-                    "mcc": "208",
-                    "mnc": "93"
-                },
-                "tac": "000001"
-            }
-        ],
-        "amfSetId": "3f8",
-        "amfRegionId": "ca"
+    "ausfInfo": {
+      "groupId": "ausfGroup001"
     },
     "nfServices": [
+      {
+        "serviceInstanceId": "97a78402-97e0-4c4b-86eb-62530650537b",
+        "serviceName": "nausf-auth",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.2"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.9",
+            "port": 8000
+          }
+        ]
+      }
+    ],
+    "nfInstanceId": "97a78402-97e0-4c4b-86eb-62530650537b",
+    "nfType": "AUSF"
+  },
+  {
+    "_id": "63c40aea49632cef052d4596",
+    "nfType": "NSSF",
+    "nfStatus": "REGISTERED",
+    "plmnList": [
+      {
+        "mcc": "208",
+        "mnc": "93"
+      }
+    ],
+    "ipv4Addresses": [
+      "127.0.0.31"
+    ],
+    "nfServices": [
+      {
+        "serviceName": "nnssf-nsselection",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.31",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.31:8000",
+        "serviceInstanceId": "0"
+      },
+      {
+        "serviceInstanceId": "1",
+        "serviceName": "nnssf-nssaiavailability",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.31",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.31:8000"
+      }
+    ],
+    "nfInstanceId": "b0c26944-d484-4e42-a7a8-eb7bbf7065ff"
+  },
+  {
+    "_id": "63c40b0549632cef052d4597",
+    "nfInstanceId": "2e126619-beaf-41b5-8f08-11e054fec09d",
+    "nfType": "PCF",
+    "nfStatus": "REGISTERED",
+    "plmnList": [
+      {
+        "mcc": "208",
+        "mnc": "93"
+      }
+    ],
+    "ipv4Addresses": [
+      "127.0.0.7"
+    ],
+    "locality": "area1",
+    "pcfInfo": {
+      "dnnList": [
+        "free5gc",
+        "internet"
+      ]
+    },
+    "nfServices": [
+      {
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.7",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.7:8000",
+        "serviceInstanceId": "2",
+        "serviceName": "npcf-bdtpolicycontrol",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED"
+      },
+      {
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.7",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.7:8000",
+        "supportedFeatures": "3",
+        "serviceInstanceId": "3",
+        "serviceName": "npcf-policyauthorization",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ]
+      },
+      {
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.7",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.7:8000",
+        "serviceInstanceId": "4",
+        "serviceName": "npcf-eventexposure"
+      },
+      {
+        "apiPrefix": "http://127.0.0.7:8000",
+        "serviceInstanceId": "5",
+        "serviceName": "npcf-ue-policy-control",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.7",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ]
+      },
+      {
+        "serviceInstanceId": "0",
+        "serviceName": "npcf-am-policy-control",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.7",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.7:8000"
+      },
+      {
+        "serviceInstanceId": "1",
+        "serviceName": "npcf-smpolicycontrol",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.7",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.7:8000",
+        "supportedFeatures": "3fff"
+      }
+    ]
+  },
+  {
+    "_id": "63c40b2849632cef052d4598",
+    "udmInfo": {},
+    "nfServices": [
+      {
+        "serviceName": "nudm-uecm",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.2"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.3",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.3:8000",
+        "serviceInstanceId": "1"
+      },
+      {
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.3",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.3:8000",
+        "serviceInstanceId": "2",
+        "serviceName": "nudm-ueau",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.2"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED"
+      },
+      {
+        "ipEndPoints": [
+          {
+            "port": 8000,
+            "ipv4Address": "127.0.0.3",
+            "transport": "TCP"
+          }
+        ],
+        "apiPrefix": "http://127.0.0.3:8000",
+        "serviceInstanceId": "3",
+        "serviceName": "nudm-ee",
+        "versions": [
+          {
+            "apiFullVersion": "1.0.2",
+            "apiVersionInUri": "v1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED"
+      },
+      {
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.3",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.3:8000",
+        "serviceInstanceId": "4",
+        "serviceName": "nudm-pp",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.2"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED"
+      },
+      {
+        "serviceInstanceId": "0",
+        "serviceName": "nudm-sdm",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.2"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.3",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.3:8000"
+      }
+    ],
+    "nfInstanceId": "04011486-a4e1-4ee3-a6c9-3ea42a631eca",
+    "nfType": "UDM",
+    "nfStatus": "REGISTERED",
+    "plmnList": [
+      {
+        "mcc": "208",
+        "mnc": "93"
+      }
+    ],
+    "ipv4Addresses": [
+      "127.0.0.3"
+    ]
+  },
+  {
+    "_id": "63c40b3a49632cef052d4599",
+    "plmnList": [
+      {
+        "mcc": "208",
+        "mnc": "93"
+      }
+    ],
+    "ipv4Addresses": [
+      "127.0.0.4"
+    ],
+    "udrInfo": {
+      "supportedDataSets": [
+        "SUBSCRIPTION"
+      ]
+    },
+    "nfServices": [
+      {
+        "serviceName": "nudr-dr",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.4",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.4:8000",
+        "serviceInstanceId": "datarepository"
+      }
+    ],
+    "nfInstanceId": "f9556146-2d8c-4661-93f9-f6c56b4f3517",
+    "nfType": "UDR",
+    "nfStatus": "REGISTERED"
+  },
+  {
+    "_id": "63c40b4749632cef052d459a",
+    "nfStatus": "REGISTERED",
+    "plmnList": [
+      {
+        "mnc": "93",
+        "mcc": "208"
+      }
+    ],
+    "nfServices": [
+      {
+        "scheme": "https",
+        "nfServiceStatus": "REGISTERED",
+        "apiPrefix": "http://127.0.0.2:8000",
+        "serviceInstanceId": "f9697f33-4728-4ca7-8fd1-68c6cf707805nsmf-pdusession",
+        "serviceName": "nsmf-pdusession",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "https://127.0.0.2:8000/nsmf-pdusession/v1",
+            "expiry": "2023-01-11T11:47:54.017853566Z"
+          }
+        ]
+      },
+      {
+        "serviceInstanceId": "f9697f33-4728-4ca7-8fd1-68c6cf707805nsmf-event-exposure",
+        "serviceName": "nsmf-event-exposure",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "https://127.0.0.2:8000/nsmf-pdusession/v1",
+            "expiry": "2023-01-11T11:47:54.017853566Z"
+          }
+        ],
+        "scheme": "https",
+        "nfServiceStatus": "REGISTERED",
+        "apiPrefix": "http://127.0.0.2:8000"
+      },
+      {
+        "apiPrefix": "http://127.0.0.2:8000",
+        "serviceInstanceId": "f9697f33-4728-4ca7-8fd1-68c6cf707805nsmf-oam",
+        "serviceName": "nsmf-oam",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "https://127.0.0.2:8000/nsmf-pdusession/v1",
+            "expiry": "2023-01-11T11:47:54.017853566Z"
+          }
+        ],
+        "scheme": "https",
+        "nfServiceStatus": "REGISTERED"
+      }
+    ],
+    "nfType": "SMF",
+    "sNssais": [
+      {
+        "sst": 1,
+        "sd": "010203"
+      },
+      {
+        "sst": 1,
+        "sd": "112233"
+      }
+    ],
+    "ipv4Addresses": [
+      "127.0.0.2"
+    ],
+    "locality": "area1",
+    "smfInfo": {
+      "sNssaiSmfInfoList": [
         {
-            "ipEndPoints": [
-                {
-                    "ipv4Address": "127.0.0.18",
-                    "transport": "TCP",
-                    "port": 8000.0
-                }
-            ],
-            "apiPrefix": "http://127.0.0.18:8000",
-            "serviceInstanceId": "0",
-            "serviceName": "namf-comm",
-            "versions": [
-                {
-                    "apiVersionInUri": "v1",
-                    "apiFullVersion": "1.0.3"
-                }
-            ],
-            "scheme": "http",
-            "nfServiceStatus": "REGISTERED"
+          "sNssai": {
+            "sst": 1,
+            "sd": "010203"
+          },
+          "dnnSmfInfoList": [
+            {
+              "dnn": "internet"
+            }
+          ]
         },
         {
-            "versions": [
-                {
-                    "apiFullVersion": "1.0.3",
-                    "apiVersionInUri": "v1"
-                }
-            ],
-            "scheme": "http",
-            "nfServiceStatus": "REGISTERED",
-            "ipEndPoints": [
-                {
-                    "ipv4Address": "127.0.0.18",
-                    "transport": "TCP",
-                    "port": 8000.0
-                }
-            ],
-            "apiPrefix": "http://127.0.0.18:8000",
-            "serviceInstanceId": "1",
-            "serviceName": "namf-evts"
-        },
-        {
-            "apiPrefix": "http://127.0.0.18:8000",
-            "serviceInstanceId": "2",
-            "serviceName": "namf-mt",
-            "versions": [
-                {
-                    "apiVersionInUri": "v1",
-                    "apiFullVersion": "1.0.3"
-                }
-            ],
-            "scheme": "http",
-            "nfServiceStatus": "REGISTERED",
-            "ipEndPoints": [
-                {
-                    "transport": "TCP",
-                    "port": 8000.0,
-                    "ipv4Address": "127.0.0.18"
-                }
-            ]
-        },
-        {
-            "nfServiceStatus": "REGISTERED",
-            "ipEndPoints": [
-                {
-                    "ipv4Address": "127.0.0.18",
-                    "transport": "TCP",
-                    "port": 8000.0
-                }
-            ],
-            "apiPrefix": "http://127.0.0.18:8000",
-            "serviceInstanceId": "3",
-            "serviceName": "namf-loc",
-            "versions": [
-                {
-                    "apiVersionInUri": "v1",
-                    "apiFullVersion": "1.0.3"
-                }
-            ],
-            "scheme": "http"
-        },
-        {
-            "serviceInstanceId": "4",
-            "serviceName": "namf-oam",
-            "versions": [
-                {
-                    "apiVersionInUri": "v1",
-                    "apiFullVersion": "1.0.3"
-                }
-            ],
-            "scheme": "http",
-            "nfServiceStatus": "REGISTERED",
-            "ipEndPoints": [
-                {
-                    "ipv4Address": "127.0.0.18",
-                    "transport": "TCP",
-                    "port": 8000.0
-                }
-            ],
-            "apiPrefix": "http://127.0.0.18:8000"
+          "sNssai": {
+            "sst": 1,
+            "sd": "112233"
+          },
+          "dnnSmfInfoList": [
+            {
+              "dnn": "internet"
+            }
+          ]
         }
+      ]
+    },
+    "nfInstanceId": "f9697f33-4728-4ca7-8fd1-68c6cf707805"
+  },
+  {
+    "_id": "63c40b5649632cef052d459b",
+    "plmnList": [
+      {
+        "mcc": "208",
+        "mnc": "93"
+      }
+    ],
+    "sNssais": [
+      {
+        "sst": 1,
+        "sd": "010203"
+      },
+      {
+        "sd": "112233",
+        "sst": 1
+      }
+    ],
+    "ipv4Addresses": [
+      "127.0.0.18"
+    ],
+    "amfInfo": {
+      "guamiList": [
+        {
+          "plmnId": {
+            "mcc": "208",
+            "mnc": "93"
+          },
+          "amfId": "cafe00"
+        }
+      ],
+      "taiList": [
+        {
+          "plmnId": {
+            "mcc": "208",
+            "mnc": "93"
+          },
+          "tac": "000001"
+        }
+      ],
+      "amfSetId": "3f8",
+      "amfRegionId": "ca"
+    },
+    "nfServices": [
+      {
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.18",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.18:8000",
+        "serviceInstanceId": "0",
+        "serviceName": "namf-comm",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.3"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED"
+      },
+      {
+        "versions": [
+          {
+            "apiFullVersion": "1.0.3",
+            "apiVersionInUri": "v1"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.18",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.18:8000",
+        "serviceInstanceId": "1",
+        "serviceName": "namf-evts"
+      },
+      {
+        "apiPrefix": "http://127.0.0.18:8000",
+        "serviceInstanceId": "2",
+        "serviceName": "namf-mt",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.3"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "transport": "TCP",
+            "port": 8000,
+            "ipv4Address": "127.0.0.18"
+          }
+        ]
+      },
+      {
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.18",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.18:8000",
+        "serviceInstanceId": "3",
+        "serviceName": "namf-loc",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.3"
+          }
+        ],
+        "scheme": "http"
+      },
+      {
+        "serviceInstanceId": "4",
+        "serviceName": "namf-oam",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "1.0.3"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "127.0.0.18",
+            "transport": "TCP",
+            "port": 8000
+          }
+        ],
+        "apiPrefix": "http://127.0.0.18:8000"
+      }
     ],
     "nfInstanceId": "6cc5f275-25e6-4388-8fb3-cc7191eb7637",
     "nfType": "AMF",
     "nfStatus": "REGISTERED"
-}
+  }
+]
