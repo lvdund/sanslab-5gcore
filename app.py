@@ -1,26 +1,32 @@
-from flask import Flask
-from flask_restful import Api
-from flask_swagger_ui import get_swaggerui_blueprint
-from pymongo import MongoClient
+from quart import Quart, request, jsonify
+from crud import nf_instance
 
-from Services import *
-from Services.NFDiscovery.discovery import *
-from Services.NFManagement.management import *
+app = Quart(__name__)
 
-app = Flask(__name__)
-api = Api(app)
+# NF Management
 
-connection_string = "mongodb://localhost:27017/"
-client = MongoClient(connection_string)
-free5gc_db = client.free5gc
+# NF Instance ID (Document): register, deregister, read, update
 
-# swagger
-SWAGGER_URL = '/swagger'
-API_URL = '/static/swagger.yaml'
-SWAGGER_BLUEPRINT = get_swaggerui_blueprint( SWAGGER_URL, API_URL, config={'app_name': 'list api'} )
-app.register_blueprint(SWAGGER_BLUEPRINT, url_prefix = SWAGGER_URL)
+@app.put("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
+async def nf_register(nfInstanceId):
+    return jsonify(nf_instance.create_nf_instance(nf_profile=await request.get_json(), nfInstanceId=nfInstanceId))
 
-api.add_resource(GetData, "/getdata")
+@app.delete("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
+async def nf_deregister(nfInstanceId):
+    return jsonify(nf_instance.delete_nf_instance(nfInstanceId=nfInstanceId))
+
+@app.get("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
+async def nf_read(nfInstanceId):
+    nf_prf = nf_instance.get_nf_instance(nfInstanceId= nfInstanceId)
+    if nf_prf != None:
+        nf_prf["_id"] = str(nf_prf["_id"])
+        return nf_prf
+    return None
+
+@app.patch("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
+async def nf_update(nfInstanceId):
+    return jsonify(nf_instance.modify_nf_instance(nfInstanceId=nfInstanceId, update_values=await request.get_json()))
+
 
 if __name__ == "__main__":
     app.run()
