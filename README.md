@@ -7,7 +7,7 @@ pip install -r requirement.txt
 ## Note
 
 * `flask` does not support http2 -> use `quart` with `hypercorn`
-* For the time being, I don't use the [Services](./Services/) package, all the functions are in `app.py` and the [crud](./crud/) . package
+* For the time being, I don't use the [Services](./Services/) package, all the functions are in `app.py` and the [crud](./crud/) package
 
 ## Run
 
