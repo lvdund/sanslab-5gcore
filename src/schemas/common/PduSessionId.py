@@ -1,0 +1,3 @@
+
+class PduSessionId(int):
+    pass

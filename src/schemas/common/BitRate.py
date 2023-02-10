@@ -1,0 +1,3 @@
+
+class BitRate(str):
+    pass

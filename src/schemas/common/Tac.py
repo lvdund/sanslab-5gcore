@@ -1,0 +1,3 @@
+
+class Tac(str):
+    pass

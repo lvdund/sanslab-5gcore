@@ -1,0 +1,3 @@
+
+class Pei(str):
+    pass

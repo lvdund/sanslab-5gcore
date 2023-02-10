@@ -1,0 +1,3 @@
+
+class SupportedFeatures(str):
+    pass

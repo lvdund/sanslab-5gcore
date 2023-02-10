@@ -1,0 +1,3 @@
+
+class HfcNId(str):
+    pass

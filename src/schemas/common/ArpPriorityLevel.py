@@ -1,0 +1,3 @@
+
+class ArpPriorityLevel(int):
+    pass

@@ -1,0 +1,3 @@
+
+class TngfId(str):
+    pass

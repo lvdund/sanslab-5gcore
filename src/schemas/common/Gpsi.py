@@ -1,0 +1,3 @@
+
+class Gpsi(str):
+    pass

@@ -1,0 +1,3 @@
+
+class WAgfId(str):
+    pass

@@ -1,0 +1,3 @@
+
+class TimeZone(str):
+    pass

@@ -1,0 +1,3 @@
+
+class CagId(str):
+    pass

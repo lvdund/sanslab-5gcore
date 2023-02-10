@@ -1,0 +1,3 @@
+
+class Uri(str):
+    pass

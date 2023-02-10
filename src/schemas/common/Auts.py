@@ -1,0 +1,3 @@
+
+class Auts(str):
+    pass

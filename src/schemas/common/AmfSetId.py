@@ -1,0 +1,3 @@
+
+class AmfSetId(str):
+    pass

@@ -1,0 +1,3 @@
+
+class NfGroupId(str):
+    pass

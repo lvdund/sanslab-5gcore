@@ -1,0 +1,3 @@
+
+class ServingNetworkName(str):
+    pass

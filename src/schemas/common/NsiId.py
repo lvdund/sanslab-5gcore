@@ -1,0 +1,3 @@
+
+class NsiId(str):
+    pass

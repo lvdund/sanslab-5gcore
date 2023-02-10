@@ -1,0 +1,3 @@
+
+class NrCellId(str):
+    pass

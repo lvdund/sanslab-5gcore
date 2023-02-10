@@ -1,0 +1,3 @@
+
+class EpsBearerId(int):
+    pass

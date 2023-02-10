@@ -1,0 +1,3 @@
+
+class Mnc(str):
+    pass

@@ -1,0 +1,1239 @@
+{
+    "validityPeriod": 0,
+    "nfInstances": [
+        {
+            "sNssais": [
+                {
+                    "sd": "sd",
+                    "sst": 153
+                },
+                {
+                    "sd": "sd",
+                    "sst": 153
+                }
+            ],
+            "pcfInfo": {
+                "rxDiamHost": "rxDiamHost",
+                "dnnList": [
+                    null,
+                    null
+                ],
+                "rxDiamRealm": "rxDiamRealm",
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "ipv6Addresses": [
+                "2001:db8:85a3::8a2e:370:7334",
+                "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "customInfo": "{}",
+            "plmnList": [
+                {
+                    "mnc": "mnc",
+                    "mcc": "mcc"
+                },
+                {
+                    "mnc": "mnc",
+                    "mcc": "mcc"
+                }
+            ],
+            "udmInfo": {
+                "routingIndicators": [
+                    "routingIndicators",
+                    "routingIndicators"
+                ],
+                "groupId": "groupId",
+                "externalGroupIdentifiersRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "gpsiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "capacity": 9606,
+            "nsiList": [
+                "nsiList",
+                "nsiList"
+            ],
+            "load": 59,
+            "nfServices": [
+                {
+                    "recoveryTime": "2000-01-23T04:56:07.000+00:00",
+                    "supportedFeatures": "supportedFeatures",
+                    "fqdn": "fqdn",
+                    "serviceInstanceId": "serviceInstanceId",
+                    "priority": 23697,
+                    "capacity": 46276,
+                    "defaultNotificationSubscriptions": [
+                        {
+                            "callbackUri": "callbackUri"
+                        },
+                        {
+                            "callbackUri": "callbackUri"
+                        }
+                    ],
+                    "load": 93,
+                    "versions": [
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        },
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        }
+                    ],
+                    "ipEndPoints": [
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        },
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        }
+                    ],
+                    "apiPrefix": "apiPrefix",
+                    "chfServiceInfo": {
+                        "primaryChfServiceInstance": "primaryChfServiceInstance",
+                        "secondaryChfServiceInstance": "secondaryChfServiceInstance"
+                    }
+                },
+                {
+                    "recoveryTime": "2000-01-23T04:56:07.000+00:00",
+                    "supportedFeatures": "supportedFeatures",
+                    "fqdn": "fqdn",
+                    "serviceInstanceId": "serviceInstanceId",
+                    "priority": 23697,
+                    "capacity": 46276,
+                    "defaultNotificationSubscriptions": [
+                        {
+                            "callbackUri": "callbackUri"
+                        },
+                        {
+                            "callbackUri": "callbackUri"
+                        }
+                    ],
+                    "load": 93,
+                    "versions": [
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        },
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        }
+                    ],
+                    "ipEndPoints": [
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        },
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        }
+                    ],
+                    "apiPrefix": "apiPrefix",
+                    "chfServiceInfo": {
+                        "primaryChfServiceInstance": "primaryChfServiceInstance",
+                        "secondaryChfServiceInstance": "secondaryChfServiceInstance"
+                    }
+                }
+            ],
+            "udrInfo": {
+                "supportedDataSets": [
+                    null,
+                    null
+                ],
+                "groupId": "groupId",
+                "externalGroupIdentifiersRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "gpsiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "ausfInfo": {
+                "routingIndicators": [
+                    "routingIndicators",
+                    "routingIndicators"
+                ],
+                "groupId": "groupId",
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "nfServicePersistence": false,
+            "ipv4Addresses": [
+                "198.51.100.1",
+                "198.51.100.1"
+            ],
+            "recoveryTime": "2000-01-23T04:56:07.000+00:00",
+            "nfInstanceId": "046b6c7f-0b8a-43b9-b35d-6489e6daee91",
+            "upfInfo": {
+                "iwkEpsInd": false,
+                "interfaceUpfInfoList": [
+                    {
+                        "networkInstance": "networkInstance",
+                        "ipv4EndpointAddresses": [
+                            "198.51.100.1",
+                            "198.51.100.1"
+                        ],
+                        "ipv6EndpointAddresses": [
+                            "2001:db8:85a3::8a2e:370:7334",
+                            "2001:db8:85a3::8a2e:370:7334"
+                        ],
+                        "endpointFqdn": "endpointFqdn"
+                    },
+                    {
+                        "networkInstance": "networkInstance",
+                        "ipv4EndpointAddresses": [
+                            "198.51.100.1",
+                            "198.51.100.1"
+                        ],
+                        "ipv6EndpointAddresses": [
+                            "2001:db8:85a3::8a2e:370:7334",
+                            "2001:db8:85a3::8a2e:370:7334"
+                        ],
+                        "endpointFqdn": "endpointFqdn"
+                    }
+                ],
+                "smfServingArea": [
+                    "smfServingArea",
+                    "smfServingArea"
+                ],
+                "sNssaiUpfInfoList": [
+                    {
+                        "dnnUpfInfoList": [
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    },
+                    {
+                        "dnnUpfInfoList": [
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    }
+                ]
+            },
+            "bsfInfo": {
+                "dnnList": [
+                    null,
+                    null
+                ],
+                "ipv6PrefixRanges": [
+                    {
+                        "start": "2001:db8:abcd:12::0/64",
+                        "end": "2001:db8:abcd:12::0/64"
+                    },
+                    {
+                        "start": "2001:db8:abcd:12::0/64",
+                        "end": "2001:db8:abcd:12::0/64"
+                    }
+                ],
+                "ipDomainList": [
+                    "ipDomainList",
+                    "ipDomainList"
+                ],
+                "ipv4AddressRanges": [
+                    {
+                        "start": "198.51.100.1",
+                        "end": "198.51.100.1"
+                    },
+                    {
+                        "start": "198.51.100.1",
+                        "end": "198.51.100.1"
+                    }
+                ]
+            },
+            "fqdn": "fqdn",
+            "locality": "locality",
+            "priority": 36944,
+            "chfInfo": {
+                "gpsiRangeList": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "plmnRangeList": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "supiRangeList": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "amfInfo": {
+                "backupInfoAmfRemoval": [
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    },
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    }
+                ],
+                "guamiList": [
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    },
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    }
+                ],
+                "taiRangeList": [
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ],
+                "backupInfoAmfFailure": [
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    },
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    }
+                ],
+                "amfSetId": "amfSetId",
+                "amfRegionId": "amfRegionId",
+                "n2InterfaceAmfInfo": {
+                    "ipv4EndpointAddress": [
+                        "198.51.100.1",
+                        "198.51.100.1"
+                    ],
+                    "amfName": "amfName",
+                    "ipv6EndpointAddress": [
+                        "2001:db8:85a3::8a2e:370:7334",
+                        "2001:db8:85a3::8a2e:370:7334"
+                    ]
+                },
+                "taiList": [
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ]
+            },
+            "smfInfo": {
+                "accessType": [
+                    null,
+                    null
+                ],
+                "sNssaiSmfInfoList": [
+                    {
+                        "dnnSmfInfoList": [
+                            {
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    },
+                    {
+                        "dnnSmfInfoList": [
+                            {
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    }
+                ],
+                "taiRangeList": [
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ],
+                "taiList": [
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ],
+                "pgwFqdn": "pgwFqdn"
+            }
+        },
+        {
+            "sNssais": [
+                {
+                    "sd": "sd",
+                    "sst": 153
+                },
+                {
+                    "sd": "sd",
+                    "sst": 153
+                }
+            ],
+            "pcfInfo": {
+                "rxDiamHost": "rxDiamHost",
+                "dnnList": [
+                    null,
+                    null
+                ],
+                "rxDiamRealm": "rxDiamRealm",
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "ipv6Addresses": [
+                "2001:db8:85a3::8a2e:370:7334",
+                "2001:db8:85a3::8a2e:370:7334"
+            ],
+            "customInfo": "{}",
+            "plmnList": [
+                {
+                    "mnc": "mnc",
+                    "mcc": "mcc"
+                },
+                {
+                    "mnc": "mnc",
+                    "mcc": "mcc"
+                }
+            ],
+            "udmInfo": {
+                "routingIndicators": [
+                    "routingIndicators",
+                    "routingIndicators"
+                ],
+                "groupId": "groupId",
+                "externalGroupIdentifiersRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "gpsiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "capacity": 9606,
+            "nsiList": [
+                "nsiList",
+                "nsiList"
+            ],
+            "load": 59,
+            "nfServices": [
+                {
+                    "recoveryTime": "2000-01-23T04:56:07.000+00:00",
+                    "supportedFeatures": "supportedFeatures",
+                    "fqdn": "fqdn",
+                    "serviceInstanceId": "serviceInstanceId",
+                    "priority": 23697,
+                    "capacity": 46276,
+                    "defaultNotificationSubscriptions": [
+                        {
+                            "callbackUri": "callbackUri"
+                        },
+                        {
+                            "callbackUri": "callbackUri"
+                        }
+                    ],
+                    "load": 93,
+                    "versions": [
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        },
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        }
+                    ],
+                    "ipEndPoints": [
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        },
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        }
+                    ],
+                    "apiPrefix": "apiPrefix",
+                    "chfServiceInfo": {
+                        "primaryChfServiceInstance": "primaryChfServiceInstance",
+                        "secondaryChfServiceInstance": "secondaryChfServiceInstance"
+                    }
+                },
+                {
+                    "recoveryTime": "2000-01-23T04:56:07.000+00:00",
+                    "supportedFeatures": "supportedFeatures",
+                    "fqdn": "fqdn",
+                    "serviceInstanceId": "serviceInstanceId",
+                    "priority": 23697,
+                    "capacity": 46276,
+                    "defaultNotificationSubscriptions": [
+                        {
+                            "callbackUri": "callbackUri"
+                        },
+                        {
+                            "callbackUri": "callbackUri"
+                        }
+                    ],
+                    "load": 93,
+                    "versions": [
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        },
+                        {
+                            "apiFullVersion": "apiFullVersion",
+                            "apiVersionInUri": "apiVersionInUri",
+                            "expiry": "2000-01-23T04:56:07.000+00:00"
+                        }
+                    ],
+                    "ipEndPoints": [
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        },
+                        {
+                            "ipv6Address": "2001:db8:85a3::8a2e:370:7334",
+                            "port": 15087,
+                            "ipv4Address": "198.51.100.1"
+                        }
+                    ],
+                    "apiPrefix": "apiPrefix",
+                    "chfServiceInfo": {
+                        "primaryChfServiceInstance": "primaryChfServiceInstance",
+                        "secondaryChfServiceInstance": "secondaryChfServiceInstance"
+                    }
+                }
+            ],
+            "udrInfo": {
+                "supportedDataSets": [
+                    null,
+                    null
+                ],
+                "groupId": "groupId",
+                "externalGroupIdentifiersRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "gpsiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "ausfInfo": {
+                "routingIndicators": [
+                    "routingIndicators",
+                    "routingIndicators"
+                ],
+                "groupId": "groupId",
+                "supiRanges": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "nfServicePersistence": false,
+            "ipv4Addresses": [
+                "198.51.100.1",
+                "198.51.100.1"
+            ],
+            "recoveryTime": "2000-01-23T04:56:07.000+00:00",
+            "nfInstanceId": "046b6c7f-0b8a-43b9-b35d-6489e6daee91",
+            "upfInfo": {
+                "iwkEpsInd": false,
+                "interfaceUpfInfoList": [
+                    {
+                        "networkInstance": "networkInstance",
+                        "ipv4EndpointAddresses": [
+                            "198.51.100.1",
+                            "198.51.100.1"
+                        ],
+                        "ipv6EndpointAddresses": [
+                            "2001:db8:85a3::8a2e:370:7334",
+                            "2001:db8:85a3::8a2e:370:7334"
+                        ],
+                        "endpointFqdn": "endpointFqdn"
+                    },
+                    {
+                        "networkInstance": "networkInstance",
+                        "ipv4EndpointAddresses": [
+                            "198.51.100.1",
+                            "198.51.100.1"
+                        ],
+                        "ipv6EndpointAddresses": [
+                            "2001:db8:85a3::8a2e:370:7334",
+                            "2001:db8:85a3::8a2e:370:7334"
+                        ],
+                        "endpointFqdn": "endpointFqdn"
+                    }
+                ],
+                "smfServingArea": [
+                    "smfServingArea",
+                    "smfServingArea"
+                ],
+                "sNssaiUpfInfoList": [
+                    {
+                        "dnnUpfInfoList": [
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    },
+                    {
+                        "dnnUpfInfoList": [
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnaiList": [
+                                    null,
+                                    null
+                                ],
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    }
+                ]
+            },
+            "bsfInfo": {
+                "dnnList": [
+                    null,
+                    null
+                ],
+                "ipv6PrefixRanges": [
+                    {
+                        "start": "2001:db8:abcd:12::0/64",
+                        "end": "2001:db8:abcd:12::0/64"
+                    },
+                    {
+                        "start": "2001:db8:abcd:12::0/64",
+                        "end": "2001:db8:abcd:12::0/64"
+                    }
+                ],
+                "ipDomainList": [
+                    "ipDomainList",
+                    "ipDomainList"
+                ],
+                "ipv4AddressRanges": [
+                    {
+                        "start": "198.51.100.1",
+                        "end": "198.51.100.1"
+                    },
+                    {
+                        "start": "198.51.100.1",
+                        "end": "198.51.100.1"
+                    }
+                ]
+            },
+            "fqdn": "fqdn",
+            "locality": "locality",
+            "priority": 36944,
+            "chfInfo": {
+                "gpsiRangeList": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "plmnRangeList": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ],
+                "supiRangeList": [
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    },
+                    {
+                        "start": "start",
+                        "pattern": "pattern",
+                        "end": "end"
+                    }
+                ]
+            },
+            "amfInfo": {
+                "backupInfoAmfRemoval": [
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    },
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    }
+                ],
+                "guamiList": [
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    },
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    }
+                ],
+                "taiRangeList": [
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ],
+                "backupInfoAmfFailure": [
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    },
+                    {
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        },
+                        "amfId": "amfId"
+                    }
+                ],
+                "amfSetId": "amfSetId",
+                "amfRegionId": "amfRegionId",
+                "n2InterfaceAmfInfo": {
+                    "ipv4EndpointAddress": [
+                        "198.51.100.1",
+                        "198.51.100.1"
+                    ],
+                    "amfName": "amfName",
+                    "ipv6EndpointAddress": [
+                        "2001:db8:85a3::8a2e:370:7334",
+                        "2001:db8:85a3::8a2e:370:7334"
+                    ]
+                },
+                "taiList": [
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ]
+            },
+            "smfInfo": {
+                "accessType": [
+                    null,
+                    null
+                ],
+                "sNssaiSmfInfoList": [
+                    {
+                        "dnnSmfInfoList": [
+                            {
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    },
+                    {
+                        "dnnSmfInfoList": [
+                            {
+                                "dnn": "dnn"
+                            },
+                            {
+                                "dnn": "dnn"
+                            }
+                        ],
+                        "sNssai": {
+                            "sd": "sd",
+                            "sst": 153
+                        }
+                    }
+                ],
+                "taiRangeList": [
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tacRangeList": [
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            },
+                            {
+                                "start": "start",
+                                "pattern": "pattern",
+                                "end": "end"
+                            }
+                        ],
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ],
+                "taiList": [
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    },
+                    {
+                        "tac": "tac",
+                        "plmnId": {
+                            "mnc": "mnc",
+                            "mcc": "mcc"
+                        }
+                    }
+                ],
+                "pgwFqdn": "pgwFqdn"
+            }
+        }
+    ]
+}

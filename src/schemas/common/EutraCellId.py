@@ -1,0 +1,3 @@
+
+class EutraCellId(str):
+    pass

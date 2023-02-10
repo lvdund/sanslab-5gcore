@@ -1,0 +1,3 @@
+
+class NgRanIdentifier(str):
+    pass

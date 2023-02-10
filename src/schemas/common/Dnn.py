@@ -1,0 +1,3 @@
+
+class Dnn(str):
+    pass

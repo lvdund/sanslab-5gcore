@@ -1,0 +1,3 @@
+
+class AreaCode(str):
+    pass

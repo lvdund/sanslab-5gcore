@@ -1,0 +1,3 @@
+
+class SupiOrSuci(str):
+    pass

@@ -1,0 +1,3 @@
+
+class Gci(str):
+    pass

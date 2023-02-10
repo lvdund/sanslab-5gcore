@@ -1,0 +1,3 @@
+
+class GroupId(str):
+    pass

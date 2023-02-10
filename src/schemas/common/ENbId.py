@@ -1,0 +1,3 @@
+
+class ENbId(str):
+    pass
