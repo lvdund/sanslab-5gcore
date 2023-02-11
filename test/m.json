@@ -1,0 +1,44 @@
+{
+    "_id": {
+        "$oid": "63e0d32510285c5cd394cbfe"
+    },
+    "nfInstanceId": "bf80ab98-6504-4d4f-bd9b-5c748a291c53",
+    "nfType": "AUSF",
+    "nfStatus": "REGISTERED",
+    "plmnList": [
+        {
+            "mcc": "208",
+            "mnc": "93"
+        },
+        {
+            "mcc": "123",
+            "mnc": "45"
+        }
+    ],
+    "ipv4Addresses": [
+        "127.0.0.9"
+    ],
+    "ausfInfo": {
+        "groupId": "ausfGroup001"
+    },
+    "nfServices": [
+        {
+            "serviceInstanceId": "bf80ab98-6504-4d4f-bd9b-5c748a291c53",
+            "serviceName": "nausf-auth",
+            "versions": [
+                {
+                    "apiVersionInUri": "v1",
+                    "apiFullVersion": "1.0.2"
+                }
+            ],
+            "scheme": "http",
+            "nfServiceStatus": "REGISTERED",
+            "ipEndPoints": [
+                {
+                    "ipv4Address": "127.0.0.9",
+                    "port": 8000
+                }
+            ]
+        }
+    ]
+}

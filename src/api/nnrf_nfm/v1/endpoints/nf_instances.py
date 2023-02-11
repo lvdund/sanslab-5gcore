@@ -5,6 +5,7 @@ from src.crud.crud_nf_instance import *
 from src.schemas.HeartBeatTimer import listNF_heartBeatTimer
 from src.schemas.NFStatus import NFStatus
 import time
+from threading import Thread
 
 @app.put("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
 async def nf_register(nfInstanceId):
@@ -28,13 +29,16 @@ async def nf_update(nfInstanceId):
 
 # NF Heart-Beat
 def nf_heart_beat():
+    i = 0
     while True:
         time.sleep(settings.hear_beat_timer)
         current_time = time.time()
         for nf in listNF_heartBeatTimer:
-            if (current_time-nf.updateTime)>5.5:
-                nf.nfStatus = NFStatus.SUSPENDED
-                modify_nf_instance(nfInstanceId=nf.nfInstanceId, update_values={"nfStatus": "SUSPENDED"})
+            if (current_time-nf.updateTime)>2:
+                nf.nfStatus = "SUSPENDED"
+                modify_nf_instance(nfInstanceId=nf.nfInstanceId, status= NFStatus.SUSPENDED, update_values= [])
+
+nf_heart_beat_timer = Thread(target= nf_heart_beat)
 
 @app.get("/nnrf-nfm/v1/nf-instances")
 async def nf_discovery():

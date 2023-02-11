@@ -58,18 +58,33 @@ def delete_nf_instance(nfInstanceId):
         print("Cannot delete: " + str(nfInstanceId))
         return 400
 
-def modify_nf_instance(nfInstanceId, update_values):
+def modify_nf_instance(nfInstanceId, update_values, status = None):
     if get_nf_instance(nfInstanceId= nfInstanceId) == None:
         print("NF does not exist")
         return 400
+    if status is not None:
+        try:
+            suspended_status = {"nfStatus": "SUSPENDED"}
+            new_values = { "$set": suspended_status}
+            NfProfile.update_one({"nfInstanceId": nfInstanceId}, new_values)
+            print("suspended_status")
+            return 200
+        except:
+            print("error")
+            return 400
     try:
-        update_values.update({"nfStatus": "REGISTERED"})
-        new_values = { "$set": update_values}
+        new_values = { 
+                      "$set": update_values , 
+                      "$set": {"nfStatus": "REGISTERED"}
+                      }
         NfProfile.update_one({"nfInstanceId": nfInstanceId}, new_values)
+        # NfProfile.update_one({"nfInstanceId": nfInstanceId}, {"$set": {"nfStatus": "REGISTERED"}})
         for i in range(len(listNF_heartBeatTimer)):
             if listNF_heartBeatTimer[i].nfInstanceId == nfInstanceId:
                 listNF_heartBeatTimer[i].updateTime = time.time()
-        
+                listNF_heartBeatTimer[i].nfStatus = NFStatus.REGISTERED
+                break
+        print("ON_status")
         return 200
     except:
         print("Cannot update")
