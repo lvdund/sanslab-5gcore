@@ -73,12 +73,12 @@ def modify_nf_instance(nfInstanceId, update_values, status = None):
             print("error")
             return 400
     try:
+        update_values.update({"nfStatus": "REGISTERED11"})
         new_values = { 
-                      "$set": update_values , 
-                      "$set": {"nfStatus": "REGISTERED"}
+                      "$set": update_values
+                    #   "$set": {"nfStatus": "REGISTERED"}
                       }
         NfProfile.update_one({"nfInstanceId": nfInstanceId}, new_values)
-        # NfProfile.update_one({"nfInstanceId": nfInstanceId}, {"$set": {"nfStatus": "REGISTERED"}})
         for i in range(len(listNF_heartBeatTimer)):
             if listNF_heartBeatTimer[i].nfInstanceId == nfInstanceId:
                 listNF_heartBeatTimer[i].updateTime = time.time()
