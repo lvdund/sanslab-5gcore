@@ -1,10 +1,10 @@
 from typing import List
 
-from common.Dnn import Dnn
+from src.schemas.common.Dnn import Dnn
 from pydantic import BaseModel
 
-from schemas.Ipv4AddressRange import Ipv4AddressRange
-from schemas.Ipv6PrefixRange import Ipv6PrefixRange
+from src.schemas.Ipv4AddressRange import Ipv4AddressRange
+from src.schemas.Ipv6PrefixRange import Ipv6PrefixRange
 
 
 class BsfInfo(BaseModel):

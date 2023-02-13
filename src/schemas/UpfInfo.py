@@ -1,10 +1,10 @@
 from typing import List
 
-from common.PduSessionType import PduSessionType
+from src.schemas.common.PduSessionType import PduSessionType
 from pydantic import BaseModel
 
-from schemas.InterfaceUpfInfoItem import InterfaceUpfInfoItem
-from schemas.sNssaiSmfInfoItem import sNssaiSmfInfoItem
+from src.schemas.InterfaceUpfInfoItem import InterfaceUpfInfoItem
+from src.schemas.sNssaiSmfInfoItem import sNssaiSmfInfoItem
 
 
 class UpfInfo(BaseModel):

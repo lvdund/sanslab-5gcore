@@ -1,12 +1,12 @@
 from typing import List
 
-from common.AmfRegionId import AmfRegionId
-from common.AmfSetId import AmfSetId
-from common.Guami import Guami
-from common.Tai import Tai
+from src.schemas.common.AmfRegionId import AmfRegionId
+from src.schemas.common.AmfSetId import AmfSetId
+from src.schemas.common.Guami import Guami
+from src.schemas.common.Tai import Tai
 from pydantic import BaseModel
 
-from schemas.N2InterfaceAmfInfo import N2InterfaceAmfInfo
+from src.schemas.N2InterfaceAmfInfo import N2InterfaceAmfInfo
 
 
 class AmfInfo(BaseModel):

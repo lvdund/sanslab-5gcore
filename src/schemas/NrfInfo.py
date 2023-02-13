@@ -1,17 +1,17 @@
 from typing import Dict
 
-from common.NfInstanceId import NfInstanceId
+from src.schemas.common.NfInstanceId import NfInstanceId
 from pydantic import BaseModel
 
-from schemas.AmfInfo import AmfInfo
-from schemas.AusfInfo import AusfInfo
-from schemas.BsfInfo import BsfInfo
-from schemas.ChfInfo import ChfInfo
-from schemas.PcfInfo import PcfInfo
-from schemas.SmfInfo import SmfInfo
-from schemas.UdmInfo import UdmInfo
-from schemas.UdrInfo import UdrInfo
-from schemas.UpfInfo import UpfInfo
+from src.schemas.AmfInfo import AmfInfo
+from src.schemas.AusfInfo import AusfInfo
+from src.schemas.BsfInfo import BsfInfo
+from src.schemas.ChfInfo import ChfInfo
+from src.schemas.PcfInfo import PcfInfo
+from src.schemas.SmfInfo import SmfInfo
+from src.schemas.UdmInfo import UdmInfo
+from src.schemas.UdrInfo import UdrInfo
+from src.schemas.UpfInfo import UpfInfo
 
 
 class NrfInfo(BaseModel):

@@ -1,21 +1,21 @@
 from typing import List, Union
 
-from common.DateTime import DateTime
-from common.PlmnId import PlmnId
-from common.Uri import Uri
+from src.schemas.common.DateTime import DateTime
+from src.schemas.common.PlmnId import PlmnId
+from src.schemas.common.Uri import Uri
 from pydantic import BaseModel
 
-from schemas.AmfCond import AmfCond
-from schemas.Fqdn import Fqdn
-from schemas.GuamiListCond import GuamiListCond
-from schemas.NetworkSliceCond import NetworkSliceCond
-from schemas.NfGroupCond import NfGroupCond
-from schemas.NfInstanceIdCond import NfInstanceIdCond
-from schemas.NFType import NFType
-from schemas.NfTypeCond import NfTypeCond
-from schemas.NotifCondition import NotifCondition
-from schemas.NotificationEventType import NotificationEventType
-from schemas.ServiceNameCond import ServiceNameCond
+from src.schemas.AmfCond import AmfCond
+from src.schemas.Fqdn import Fqdn
+from src.schemas.GuamiListCond import GuamiListCond
+from src.schemas.NetworkSliceCond import NetworkSliceCond
+from src.schemas.NfGroupCond import NfGroupCond
+from src.schemas.NfInstanceIdCond import NfInstanceIdCond
+from src.schemas.NFType import NFType
+from src.schemas.NfTypeCond import NfTypeCond
+from src.schemas.NotifCondition import NotifCondition
+from src.schemas.NotificationEventType import NotificationEventType
+from src.schemas.ServiceNameCond import ServiceNameCond
 
 
 class SubscriptionData(BaseModel):

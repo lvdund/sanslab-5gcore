@@ -1,8 +1,8 @@
 from typing import List
 
-from common.AmfName import AmfName
-from common.Ipv4Addr import Ipv4Addr
-from common.Ipv6Addr import Ipv6Addr
+from src.schemas.common.AmfName import AmfName
+from src.schemas.common.Ipv4Addr import Ipv4Addr
+from src.schemas.common.Ipv6Addr import Ipv6Addr
 from pydantic import BaseModel
 
 

@@ -1,9 +1,9 @@
 from typing import List
 
-from common.PlmnId import PlmnId
+from src.schemas.common.PlmnId import PlmnId
 from pydantic import BaseModel
 
-from schemas.TacRange import TacRange
+from src.schemas.TacRange import TacRange
 
 
 class TaiRange(BaseModel):

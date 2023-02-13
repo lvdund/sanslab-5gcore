@@ -1,35 +1,35 @@
 from typing import List
 
-from common.DateTime import DateTime
-from common.Ipv4Addr import Ipv4Addr
-from common.Ipv6Addr import Ipv6Addr
-from common.NfInstanceId import NfInstanceId
-from common.PlmnId import PlmnId
-from common.Snssai import Snssai
+from src.schemas.common.DateTime import DateTime
+from src.schemas.common.Ipv4Addr import Ipv4Addr
+from src.schemas.common.Ipv6Addr import Ipv6Addr
+from src.schemas.common.NfInstanceId import NfInstanceId
+from src.schemas.common.PlmnId import PlmnId
+from src.schemas.common.Snssai import Snssai
 from pydantic import BaseModel
 
-from schemas.AmfInfo import AmfInfo
-from schemas.AusfInfo import AusfInfo
-from schemas.BsfInfo import BsfInfo
-from schemas.ChfInfo import ChfInfo
-from schemas.DefaultNotificationSubscription import DefaultNotificationSubscription
-from schemas.Fqdn import Fqdn
-from schemas.NFService import NFService
-from schemas.NFStatus import NFStatus
-from schemas.NFType import NFType
-from schemas.NrfInfo import NrfInfo
-from schemas.PcfInfo import PcfInfo
-from schemas.PlmnSnssai import PlmnSnssai
-from schemas.SmfInfo import SmfInfo
-from schemas.UdmInfo import UdmInfo
-from schemas.UdrInfo import UdrInfo
-from schemas.UpfInfo import UpfInfo
+from src.schemas.AmfInfo import AmfInfo
+from src.schemas.AusfInfo import AusfInfo
+from src.schemas.BsfInfo import BsfInfo
+from src.schemas.ChfInfo import ChfInfo
+from src.schemas.DefaultNotificationSubscription import DefaultNotificationSubscription
+from src.schemas.Fqdn import Fqdn
+from src.schemas.NFService import NFService
+from src.schemas.NFStatus import NFStatus
+from src.schemas.NFType import NFType
+from src.schemas.NrfInfo import NrfInfo
+from src.schemas.PcfInfo import PcfInfo
+from src.schemas.PlmnSnssai import PlmnSnssai
+from src.schemas.SmfInfo import SmfInfo
+from src.schemas.UdmInfo import UdmInfo
+from src.schemas.UdrInfo import UdrInfo
+from src.schemas.UpfInfo import UpfInfo
 
 
 class NFProfile(BaseModel):
-    nfInstanceID: NfInstanceId
-    nfType: NFType
-    nfStatus: NFStatus
+    nfInstanceID: NfInstanceId = None       # lvdund
+    nfType: NFType = None       # lvdund
+    nfStatus: NFStatus = None       # lvdund
     heartBeatTimer: int = None
     plmnList: List[PlmnId] = []
     sNssais: List[Snssai] = []

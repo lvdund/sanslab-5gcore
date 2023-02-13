@@ -1,4 +1,4 @@
-from common.DateTime import DateTime
+from src.schemas.common.DateTime import DateTime
 from pydantic import BaseModel
 
 

@@ -1,8 +1,8 @@
-from common.Ipv4Addr import Ipv4Addr
-from common.Ipv6Addr import Ipv6Addr
+from src.schemas.common.Ipv4Addr import Ipv4Addr
+from src.schemas.common.Ipv6Addr import Ipv6Addr
 from pydantic import BaseModel
 
-from schemas.TransportProtocol import TransportProtocol
+from src.schemas.TransportProtocol import TransportProtocol
 
 
 class IpEndPoint(BaseModel):

@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from schemas.NFType import NFType
+from src.schemas.NFType import NFType
 
 
 class NfTypeCond(BaseModel):

@@ -1,10 +1,10 @@
 from typing import List
 
-from common.DiameterIdentity import DiameterIdentity
-from common.Dnn import Dnn
+from src.schemas.common.DiameterIdentity import DiameterIdentity
+from src.schemas.common.Dnn import Dnn
 from pydantic import BaseModel
 
-from schemas.SupiRange import SupiRange
+from src.schemas.SupiRange import SupiRange
 
 
 class PcfInfo(BaseModel):

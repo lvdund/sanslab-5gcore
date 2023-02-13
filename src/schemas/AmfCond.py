@@ -1,5 +1,5 @@
-from common.AmfRegionId import AmfRegionId
-from common.AmfSetId import AmfSetId
+from src.schemas.common.AmfRegionId import AmfRegionId
+from src.schemas.common.AmfSetId import AmfSetId
 from pydantic import BaseModel
 
 

@@ -1,4 +1,4 @@
-from common.NfInstanceId import NfInstanceId
+from src.schemas.common.NfInstanceId import NfInstanceId
 from pydantic import BaseModel
 
 

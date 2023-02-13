@@ -1,9 +1,9 @@
-from common.N1MessageClass import N1MessageClass
-from common.N2InformationClass import N2InformationClass
-from common.Uri import Uri
+from src.schemas.common.N1MessageClass import N1MessageClass
+from src.schemas.common.N2InformationClass import N2InformationClass
+from src.schemas.common.Uri import Uri
 from pydantic import BaseModel
 
-from schemas.NotificationType import NotificationType
+from src.schemas.NotificationType import NotificationType
 
 
 class DefaultNotificationSubscription(BaseModel):

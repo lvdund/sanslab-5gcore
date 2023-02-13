@@ -1,10 +1,10 @@
 from typing import List
 
-from common.NfGroupId import NfGroupId
+from src.schemas.common.NfGroupId import NfGroupId
 from pydantic import BaseModel
 
-from schemas.IdentityRange import IdentityRange
-from schemas.SupiRange import SupiRange
+from src.schemas.IdentityRange import IdentityRange
+from src.schemas.SupiRange import SupiRange
 
 
 class UdmInfo(BaseModel):

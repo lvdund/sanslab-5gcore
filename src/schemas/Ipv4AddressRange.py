@@ -1,4 +1,4 @@
-from common.Ipv4Addr import Ipv4Addr
+from src.schemas.common.Ipv4Addr import Ipv4Addr
 from pydantic import BaseModel
 
 

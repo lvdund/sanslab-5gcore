@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-from schemas.ServiceName import ServiceName
+from src.schemas.ServiceName import ServiceName
 
 
 class ServiceNameCond(BaseModel):

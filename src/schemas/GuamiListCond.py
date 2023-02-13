@@ -1,6 +1,6 @@
 from typing import List
 
-from common.Guami import Guami
+from src.schemas.common.Guami import Guami
 from pydantic import BaseModel
 
 

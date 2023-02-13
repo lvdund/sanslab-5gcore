@@ -1,24 +1,24 @@
 from typing import List
 
-from common.DateTime import DateTime
-from common.PlmnId import PlmnId
-from common.Snssai import Snssai
-from common.SupportedFeatures import SupportedFeatures
-from common.UriScheme import UriScheme
+from src.schemas.common.DateTime import DateTime
+from src.schemas.common.PlmnId import PlmnId
+from src.schemas.common.Snssai import Snssai
+from src.schemas.common.SupportedFeatures import SupportedFeatures
+from src.schemas.common.UriScheme import UriScheme
 from pydantic import BaseModel
 
-from schemas.ChfServiceInfo import ChfServiceInfo
-from schemas.DefaultNotificationSubscription import DefaultNotificationSubscription
-from schemas.Fqdn import Fqdn
-from schemas.IpEndPoint import IpEndPoint
-from schemas.NFServiceStatus import NFServiceStatus
-from schemas.NFServiceVersion import NFServiceVersion
-from schemas.NFType import NFType
-from schemas.ServiceName import ServiceName
+from src.schemas.ChfServiceInfo import ChfServiceInfo
+from src.schemas.DefaultNotificationSubscription import DefaultNotificationSubscription
+from src.schemas.Fqdn import Fqdn
+from src.schemas.IpEndPoint import IpEndPoint
+from src.schemas.NFServiceStatus import NFServiceStatus
+from src.schemas.NFServiceVersion import NFServiceVersion
+from src.schemas.NFType import NFType
+from src.schemas.ServiceName import ServiceName
 
 
 class NFService(BaseModel):
-    serviceInstanceID: str
+    serviceInstanceID: str = None       # lvdund
     serviceName: ServiceName
     versions: List[NFServiceVersion]
     scheme: UriScheme

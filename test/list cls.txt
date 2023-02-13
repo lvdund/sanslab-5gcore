@@ -1,0 +1,10 @@
+NfProfile
+policyData.ues.amData
+policyData.ues.smData
+subscriptionData.authenticationData.authenticationSubscription
+subscriptionData.provisionedData.amData
+subscriptionData.provisionedData.smData
+subscriptionData.provisionedData.smfSelectionSubscriptionData
+urilist
+
+mongoexport --collection=movies --db=director --out=movies.json

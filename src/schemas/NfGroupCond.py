@@ -1,5 +1,5 @@
 
-from common.NfGroupId import NfGroupId
+from src.schemas.common.NfGroupId import NfGroupId
 from pydantic import BaseModel
 
 

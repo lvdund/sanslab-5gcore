@@ -1,4 +1,4 @@
-from common.Dnn import Dnn
+from src.schemas.common.Dnn import Dnn
 from pydantic import BaseModel
 
 

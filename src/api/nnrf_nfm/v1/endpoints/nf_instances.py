@@ -1,19 +1,65 @@
 from app import app, request
-from src.env.config import settings
+import requests
 from quart import jsonify
 from src.crud.crud_nf_instance import *
-from src.schemas.HeartBeatTimer import listNF_heartBeatTimer
-from src.schemas.NFStatus import NFStatus
-import time
-from threading import Thread
+from src.database.database import Subscriptions_collection
+from src.schemas.NotificationData import NotificationData, NotificationEventType, Uri, NFProfile
 
+
+"""NF Register
+Returns:
+    NfProfile: if NF registered successful
+    None: if cannot register
+"""
 @app.put("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
 async def nf_register(nfInstanceId):
-    return jsonify(create_nf_instance(nf_profile=await request.get_json(), nfInstanceId=nfInstanceId))
+    nf_pf = create_nf_instance(nf_profile=await request.get_json(), nfInstanceId=nfInstanceId)
+    
+    """NF Status Notify
+        This service is used to notify to subscribers when a NF is registed
+    """
+    if nf_pf == 200:
+        _nf = await request.get_json()
+        del _nf["_id"]
+        for sb in Subscriptions_collection.find():
+            notify = {
+                "event": "NF_REGISTERED",
+                "nfInstanceUri": str(request.url),
+                "nfProfile": _nf
+            }
+            requests.post(
+                    url=sb["nfStatusNotificationUri"], # type: ignore
+                    json={
+                        "NotificationData": notify
+                    }
+                )
 
+    return jsonify(nf_pf)
+
+
+"""NF Deregister
+"""
 @app.delete("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
 async def nf_deregister(nfInstanceId):
-    return jsonify(delete_nf_instance(nfInstanceId=nfInstanceId))
+    nf_pf = delete_nf_instance(nfInstanceId=nfInstanceId)
+    
+    """NF Status Notify
+        This service is used to notify to subscribers when a NF is deregisted
+    """
+    if nf_pf == 200:
+        for sb in Subscriptions_collection.find():
+            notify = {
+                "event": "NF_DEREGISTERED",
+                "nfInstanceUri": str(request.url),
+                "nfProfile": None
+            }
+            requests.post(
+                    url=sb["nfStatusNotificationUri"], # type: ignore
+                    json={
+                        "NotificationData": notify
+                    }
+                )
+    return jsonify(nf_pf)
 
 @app.get("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
 async def nf_read(nfInstanceId):
@@ -23,22 +69,31 @@ async def nf_read(nfInstanceId):
         return nf_prf
     return None
 
+
+"""NF Update 
+"""
 @app.patch("/nnrf-nfm/v1/nf-instances/<nfInstanceId>")
 async def nf_update(nfInstanceId):
-    return jsonify(modify_nf_instance(nfInstanceId=nfInstanceId, update_values=await request.get_json()))
-
-# NF Heart-Beat
-def nf_heart_beat():
-    i = 0
-    while True:
-        time.sleep(settings.hear_beat_timer)
-        current_time = time.time()
-        for nf in listNF_heartBeatTimer:
-            if (current_time-nf.updateTime)>2:
-                nf.nfStatus = "SUSPENDED"
-                modify_nf_instance(nfInstanceId=nf.nfInstanceId, status= NFStatus.SUSPENDED, update_values= [])
-
-nf_heart_beat_timer = Thread(target= nf_heart_beat)
+    nf_pf = modify_nf_instance(nfInstanceId=nfInstanceId, update_values=await request.get_json())
+    
+    """NF Status Notify
+        This service is used to notify to subscribers when a NF is update
+    """
+    if nf_pf == 200:
+        _nf = await request.get_json()
+        for sb in Subscriptions_collection.find():
+            notify = {
+                "event": "NF_PROFILE_CHANGED",
+                "nfInstanceUri": str(request.url),
+                "nfProfile": _nf
+            }
+            requests.post(
+                    url=sb["nfStatusNotificationUri"], # type: ignore
+                    json={
+                        "NotificationData": notify
+                    }
+                )
+    return jsonify(nf_pf)
 
 @app.get("/nnrf-nfm/v1/nf-instances")
 async def nf_discovery():

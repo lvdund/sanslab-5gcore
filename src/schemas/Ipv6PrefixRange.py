@@ -1,4 +1,4 @@
-from common.Ipv6Prefix import Ipv6Prefix
+from src.schemas.common.Ipv6Prefix import Ipv6Prefix
 from pydantic import BaseModel
 
 

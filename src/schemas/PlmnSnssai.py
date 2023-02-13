@@ -1,7 +1,7 @@
 from typing import List
 
-from common.PlmnId import PlmnId
-from common.Snssai import Snssai
+from src.schemas.common.PlmnId import PlmnId
+from src.schemas.common.Snssai import Snssai
 from pydantic import BaseModel
 
 

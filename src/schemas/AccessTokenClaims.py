@@ -1,10 +1,10 @@
 from datetime import datetime
 from typing import List, Union
 
-from common.NfInstanceId import NfInstanceId
+from src.schemas.common.NfInstanceId import NfInstanceId
 from pydantic import BaseModel
 
-from schemas.NFType import NFType
+from src.schemas.NFType import NFType
 
 
 class AccessTokenClaims(BaseModel):

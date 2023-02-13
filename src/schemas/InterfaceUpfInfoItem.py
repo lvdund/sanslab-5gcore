@@ -1,11 +1,11 @@
 from typing import List
 
-from common.Ipv4Addr import Ipv4Addr
-from common.Ipv6Addr import Ipv6Addr
+from src.schemas.common.Ipv4Addr import Ipv4Addr
+from src.schemas.common.Ipv6Addr import Ipv6Addr
 from pydantic import BaseModel
 
-from schemas.Fqdn import Fqdn
-from schemas.UPInterfaceType import UPInterfaceType
+from src.schemas.Fqdn import Fqdn
+from src.schemas.UPInterfaceType import UPInterfaceType
 
 
 class InterfaceUpfInfoItem(BaseModel):
