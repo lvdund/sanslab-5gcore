@@ -11,5 +11,5 @@ from src.schemas.NotificationEventType import NotificationEventType
 class NotificationData(BaseModel):
     event: NotificationEventType
     nfInstanceUri: Uri
-    nfProfile: NFProfile
+    nfProfile: NFProfile = None
     profileChanges: List[Dict] = []

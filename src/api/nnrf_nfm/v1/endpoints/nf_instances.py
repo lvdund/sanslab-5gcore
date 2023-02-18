@@ -22,15 +22,15 @@ async def nf_register(nfInstanceId):
         _nf = await request.get_json()
         del _nf["_id"]
         for sb in Subscriptions_collection.find():
-            notify = {
-                "event": "NF_REGISTERED",
-                "nfInstanceUri": str(request.url),
-                "nfProfile": _nf
-            }
+            notify = NotificationData(
+                event= NotificationEventType.NF_REGISTERED,
+                nfInstanceUri= Uri(str(request.url)),
+                nfProfile= NFProfile(**_nf)
+            )
             requests.post(
                     url=sb["nfStatusNotificationUri"], # type: ignore
                     json={
-                        "NotificationData": notify
+                        "NotificationData": notify.json()
                     }
                 )
 
@@ -48,15 +48,14 @@ async def nf_deregister(nfInstanceId):
     """
     if nf_pf == 200:
         for sb in Subscriptions_collection.find():
-            notify = {
-                "event": "NF_DEREGISTERED",
-                "nfInstanceUri": str(request.url),
-                "nfProfile": None
-            }
+            notify = NotificationData(
+                event= NotificationEventType.NF_DEREGISTERED,
+                nfInstanceUri= Uri(str(request.url))
+            )
             requests.post(
                     url=sb["nfStatusNotificationUri"], # type: ignore
                     json={
-                        "NotificationData": notify
+                        "NotificationData": notify.json()
                     }
                 )
     return jsonify(nf_pf)
@@ -82,15 +81,15 @@ async def nf_update(nfInstanceId):
     if nf_pf == 200:
         _nf = await request.get_json()
         for sb in Subscriptions_collection.find():
-            notify = {
-                "event": "NF_PROFILE_CHANGED",
-                "nfInstanceUri": str(request.url),
-                "nfProfile": _nf
-            }
+            notify = NotificationData(
+                event= NotificationEventType.NF_PROFILE_CHANGED,
+                nfInstanceUri= Uri(str(request.url)),
+                profileChanges= [_nf]
+            )
             requests.post(
                     url=sb["nfStatusNotificationUri"], # type: ignore
                     json={
-                        "NotificationData": notify
+                        "NotificationData": notify.json()
                     }
                 )
     return jsonify(nf_pf)
