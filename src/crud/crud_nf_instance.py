@@ -12,7 +12,12 @@ def dc_get_nf_instance(find_value):
         a = []
         list_nf_profile = NfProfile_collection.find(find_value)
         for i in list_nf_profile:
-            a.append(i["nfType"])
+            _link = "http://127.0.0.10:8000/nnrf-nfm/v1/nf-instances/" + i["nfInstanceId"]
+            uri = urilist_collection.find_one({"_link": _link})
+            del uri["_id"]
+            a.append(uri)
+        if a == []:
+            return None
         return a
     except:
         return None
@@ -67,9 +72,7 @@ def modify_nf_instance(nfInstanceId, update_values, status = None):
             print("error")
             return 400
     try:
-        new_values = { 
-                      "$set": update_values
-                      }
+        new_values = { "$set": update_values }
         NfProfile_collection.update_one({"nfInstanceId": nfInstanceId}, new_values)
         return 200
     except:
